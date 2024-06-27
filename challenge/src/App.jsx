@@ -1,9 +1,9 @@
 import Header from "./components/Header/Header"
-import Chat from "./components/Chat"
+import Historico from "./components/Historico"
 const App =()=>{
   return <div>
     <Header/>
-    <Chat/>
+    <Historico/>
   </div>
   
 }
