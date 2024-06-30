@@ -24,12 +24,31 @@ const Historico = () => {
           ))}
         </ul>
       </div>
-      <div className="flex-1 p-10">
-        {/* Conteúdo principal aqui */}
-        <h1>Aqui ficará o conteúdo principal</h1>
+      <div className="flex-1 p-10 bg-slate-500 m-auto">
 
-        <div className="flex flex-auto">
-            <input id="style" type="text" placeholder="Escreva seu texto aqui"/>
+        <div className="flex">
+            {/* Conteúdo principal aqui */}
+        <h1>Olá, sobre o que gostaria de perguntar hoje</h1>
+          <div className="grid grid-cols-2 grid-rows-2 gap-4 p-4 mt-9">
+            <div class="bg-blue-500 text-white p-4 rounded-md hover:bg-blue-400">
+              Esqueci minha senha
+            </div>
+            <div class="bg-green-500 text-white p-4 rounded-md hover:bg-green-400">
+              Como funciona o chatbot
+            </div>
+            <div class="bg-red-500 text-white p-4 rounded-md hover:bg-red-400">
+              Duvida 3
+            </div>
+            <div class="bg-yellow-500 text-white p-4 rounded-md hover:bg-yellow-400">
+              Duvida 4
+            </div>
+          </div>
+        </div>
+        
+
+        <div className="flex flex-col mt-96 p-4">
+            <input id="footer" type="text" placeholder="Escreva seu texto aqui"/>
+            <button id="btn-click" className="m-auto rounded mt-9 max-h-26 max-w-32 bg-blue-600">Clique aqui</button>
         </div>
 
       </div>
