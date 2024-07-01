@@ -1,10 +1,16 @@
-import Header from "./components/Header/Header"
+import {useState} from 'react'
 import Historico from "./components/Historico"
+import Join from "./components/Join"
 
 const App =()=>{
+
+  const [chatVisibility,setChatVisibility]=useState(false)
+  
   return <div>
-    <Header/>
-    <Historico/>
+    {
+     chatVisibility ? <Historico/> :<Join setChatVisibility={setChatVisibility}/>
+    }
+
   </div>
   
 }
