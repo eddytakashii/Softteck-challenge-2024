@@ -5,10 +5,19 @@ import Join from "./components/Join"
 const App =()=>{
 
   const [chatVisibility,setChatVisibility]=useState(false)
+  const [username,setUsername]=useState('')
   
   return <div>
     {
-     chatVisibility ? <Historico/> :<Join setChatVisibility={setChatVisibility}/>
+     chatVisibility ? (<Historico username={username}/> )
+     
+     :(
+     <Join 
+     
+      setChatVisibility={setChatVisibility}
+      setUsername={setUsername}
+      />
+    )
     }
 
   </div>

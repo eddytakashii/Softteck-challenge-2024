@@ -1,15 +1,17 @@
 import {useRef} from 'react'
+import { useState } from 'react';
 
-const Join =({setChatVisibility})=>{
+const Join =({setChatVisibility, setUsername})=>{
 
     const usernameRef =useRef()
 
-    const handleSubmit =()=>{
-        const username = usernameRef.current.value
-        if (!username.trim()) return
-        console.log('Submit')
-        setChatVisibility(true)
-    }
+    const handleSubmit = () => {
+        const name = usernameRef.current.value.trim();
+        if (!name) return;
+        
+        setUsername(name);
+        setChatVisibility(true);
+    };
 
     return <div className="flex items-center justify-center min-h-screen bg-slate-600">
         <div className='flex flex-col items-center space-y-4'>

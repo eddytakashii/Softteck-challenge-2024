@@ -6,7 +6,7 @@ const historyEvents = [
   // Adicione mais eventos conforme necessário
 ];
 
-const Historico = () => {
+const Historico = ({username}) => {
   return (
     <div className="flex">
       <div className="w-64 h-screen bg-gray-800 text-white overflow-y-auto">
@@ -28,7 +28,7 @@ const Historico = () => {
 
         <div className="flex">
             {/* Conteúdo principal aqui */}
-        <h1>Olá, sobre o que gostaria de perguntar hoje</h1>
+        <h1>Olá {username}, sobre o que gostaria de perguntar hoje</h1>
           <div className="grid grid-cols-2 grid-rows-2 gap-4 p-4 mt-9">
             <div class="bg-blue-500 text-white p-4 rounded-md hover:bg-blue-400">
               Esqueci minha senha
