@@ -9,11 +9,8 @@ const App =()=>{
   
   return <div>
     {
-     chatVisibility ? (<Historico username={username}/> )
-     
-     :(
+     chatVisibility ? (<Historico username={username}/> ):(
      <Join 
-     
       setChatVisibility={setChatVisibility}
       setUsername={setUsername}
       />
